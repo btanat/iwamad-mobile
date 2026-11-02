@@ -1,5 +1,6 @@
 {
   "expo": {
+    "scheme": "iwamad-mobile",
     "name": "iwamad-mobile-new",
     "slug": "iwamad-mobile-new",
     "version": "1.0.0",
@@ -19,7 +20,14 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "output": "single"
+    },
+    "experiments": {
+      "baseUrl": "/iwamad-mobile"
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
